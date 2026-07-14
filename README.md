@@ -156,4 +156,5 @@ also sees recent lag/rolling temperature values, performs best — it's
 capturing short-term weather persistence in addition to the seasonal cycle.
 Exact numbers will differ when run against live New Delhi data with 15
 years of history.
+
 =======
