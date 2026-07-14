@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Weather Data Analysis and Prediction
 
 A final-year AI/ML project that analyzes historical daily weather data and
@@ -157,13 +156,4 @@ also sees recent lag/rolling temperature values, performs best — it's
 capturing short-term weather persistence in addition to the seasonal cycle.
 Exact numbers will differ when run against live New Delhi data with 15
 years of history.
-
-## Possible extensions
-
-- Add an LSTM/GRU deep learning model for sequence forecasting
-- Multi-city comparison
-- Incorporate additional predictors (humidity, pressure, ENSO indices)
-- Deploy the Streamlit app to Streamlit Community Cloud for a public link
 =======
-# weather-predictor
->>>>>>> b01745fcc26e46cb6aba1eb6d519cfd09bb9cb2d
