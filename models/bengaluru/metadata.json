@@ -1,0 +1,85 @@
+{
+  "city_key": "bengaluru",
+  "city_label": "Bengaluru, India",
+  "target": "temp_mean",
+  "trend_features": [
+    "time_index"
+  ],
+  "seasonal_features": [
+    "time_index",
+    "doy_sin",
+    "doy_cos"
+  ],
+  "rf_features": [
+    "time_index",
+    "doy_sin",
+    "doy_cos",
+    "month",
+    "day_of_week",
+    "temp_lag_1",
+    "temp_lag_2",
+    "temp_lag_3",
+    "temp_lag_7",
+    "temp_lag_14",
+    "temp_roll_mean_7",
+    "temp_roll_std_7",
+    "temp_roll_mean_14",
+    "temp_roll_std_14",
+    "temp_roll_mean_30",
+    "temp_roll_std_30"
+  ],
+  "lstm_available": true,
+  "lstm_meta": {
+    "window": 30
+  },
+  "test_fraction": 0.15,
+  "n_train": 4647,
+  "n_test": 819,
+  "metrics": {
+    "linear_trend": {
+      "rmse": 2.5474573044251296,
+      "mae": 2.142925559040659,
+      "r2": -0.008114116061921584
+    },
+    "linear_seasonal": {
+      "rmse": 1.640665902484089,
+      "mae": 1.2906241634145652,
+      "r2": 0.581846079631353
+    },
+    "polynomial_seasonal": {
+      "rmse": 1.615464255110819,
+      "mae": 1.2769673618994757,
+      "r2": 0.5945936246770279
+    },
+    "random_forest": {
+      "rmse": 1.216873830265154,
+      "mae": 0.9780149537438174,
+      "r2": 0.7699686803585625
+    },
+    "lstm": {
+      "rmse": 1.2232600670780045,
+      "mae": 0.9754590442522877,
+      "r2": 0.7675479046930492
+    }
+  },
+  "feature_importances": {
+    "time_index": 0.0087,
+    "doy_sin": 0.0066,
+    "doy_cos": 0.0256,
+    "month": 0.0017,
+    "day_of_week": 0.0036,
+    "temp_lag_1": 0.8689,
+    "temp_lag_2": 0.0088,
+    "temp_lag_3": 0.0087,
+    "temp_lag_7": 0.0072,
+    "temp_lag_14": 0.0082,
+    "temp_roll_mean_7": 0.0068,
+    "temp_roll_std_7": 0.0092,
+    "temp_roll_mean_14": 0.0089,
+    "temp_roll_std_14": 0.0077,
+    "temp_roll_mean_30": 0.0107,
+    "temp_roll_std_30": 0.0087
+  },
+  "date_min": "2011-07-23",
+  "date_max": "2026-07-09"
+}

@@ -1,0 +1,3 @@
+city_key=mumbai
+source=Mumbai, India — SYNTHETIC offline demo data (not real observations)
+rows=5480

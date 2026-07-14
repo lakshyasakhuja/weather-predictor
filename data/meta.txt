@@ -1,2 +1,0 @@
-city=Seattle, USA (NOAA historical dataset)
-rows=1461

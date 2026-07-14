@@ -1,0 +1,3 @@
+city_key=san_francisco
+source=San Francisco, USA — offline fallback: real NOAA San Francisco hourly-temp data
+rows=365

@@ -1,0 +1,3 @@
+city_key=bengaluru
+source=Bengaluru, India — SYNTHETIC offline demo data (not real observations)
+rows=5480

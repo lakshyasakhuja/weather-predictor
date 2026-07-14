@@ -1,0 +1,3 @@
+city_key=new_delhi
+source=New Delhi, India — OFFLINE FALLBACK: real NOAA Seattle data (not actually New Delhi, India)
+rows=1461

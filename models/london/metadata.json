@@ -1,0 +1,85 @@
+{
+  "city_key": "london",
+  "city_label": "London, UK",
+  "target": "temp_mean",
+  "trend_features": [
+    "time_index"
+  ],
+  "seasonal_features": [
+    "time_index",
+    "doy_sin",
+    "doy_cos"
+  ],
+  "rf_features": [
+    "time_index",
+    "doy_sin",
+    "doy_cos",
+    "month",
+    "day_of_week",
+    "temp_lag_1",
+    "temp_lag_2",
+    "temp_lag_3",
+    "temp_lag_7",
+    "temp_lag_14",
+    "temp_roll_mean_7",
+    "temp_roll_std_7",
+    "temp_roll_mean_14",
+    "temp_roll_std_14",
+    "temp_roll_mean_30",
+    "temp_roll_std_30"
+  ],
+  "lstm_available": true,
+  "lstm_meta": {
+    "window": 30
+  },
+  "test_fraction": 0.15,
+  "n_train": 4647,
+  "n_test": 819,
+  "metrics": {
+    "linear_trend": {
+      "rmse": 5.053597347535888,
+      "mae": 4.45432688167914,
+      "r2": -0.017951622802279132
+    },
+    "linear_seasonal": {
+      "rmse": 1.6406659024840877,
+      "mae": 1.2906241634145632,
+      "r2": 0.8927082888068284
+    },
+    "polynomial_seasonal": {
+      "rmse": 1.6154642550694456,
+      "mae": 1.2769673618076822,
+      "r2": 0.8959791081321252
+    },
+    "random_forest": {
+      "rmse": 1.2250480649510858,
+      "mae": 0.9828602325460462,
+      "r2": 0.9401819674865809
+    },
+    "lstm": {
+      "rmse": 1.247386612866356,
+      "mae": 0.9977082283320586,
+      "r2": 0.9379805336750071
+    }
+  },
+  "feature_importances": {
+    "time_index": 0.0024,
+    "doy_sin": 0.0021,
+    "doy_cos": 0.0062,
+    "month": 0.0004,
+    "day_of_week": 0.0011,
+    "temp_lag_1": 0.9634,
+    "temp_lag_2": 0.0025,
+    "temp_lag_3": 0.0024,
+    "temp_lag_7": 0.0023,
+    "temp_lag_14": 0.0024,
+    "temp_roll_mean_7": 0.0026,
+    "temp_roll_std_7": 0.0024,
+    "temp_roll_mean_14": 0.0026,
+    "temp_roll_std_14": 0.0022,
+    "temp_roll_mean_30": 0.0026,
+    "temp_roll_std_30": 0.0025
+  },
+  "date_min": "2011-07-23",
+  "date_max": "2026-07-09"
+}

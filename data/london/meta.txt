@@ -1,0 +1,3 @@
+city_key=london
+source=London, UK — SYNTHETIC offline demo data (not real observations)
+rows=5480
