@@ -1,6 +1,6 @@
 # Weather Data Analysis and Prediction
 
-A final-year AI/ML project that analyzes historical daily weather data and
+A second-year AI/ML project that analyzes historical daily weather data and
 predicts future temperature trends using classical regression, machine
 learning, and deep learning techniques, delivered as an interactive
 multi-city web dashboard.
